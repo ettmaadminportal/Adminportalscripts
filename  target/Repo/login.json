@@ -1,0 +1,120 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-05T07:34:39.110Z",
+        "before": [
+          {
+            "result": {
+              "duration": 25084790700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "login with valid data",
+        "description": "",
+        "id": "login-page;login-with-valid-data",
+        "after": [
+          {
+            "result": {
+              "duration": 39844600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13738830000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch the browser",
+            "match": {
+              "location": "Login_Execution.launch_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 63881100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Enter credentials to login",
+            "match": {
+              "location": "Login_Execution.enter_credentials_to_login(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "jayakumarraju@ettma.com"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44153100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click Next button",
+            "match": {
+              "location": "Login_Execution.click_Next_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59662100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter the password",
+            "match": {
+              "location": "Login_Execution.enter_the_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Kumar@1989"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10541130900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click on the signin button",
+            "match": {
+              "location": "Login_Execution.click_on_the_signin_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Login page",
+    "description": "",
+    "id": "login-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/login.feature",
+    "tags": []
+  }
+]

@@ -46,10 +46,10 @@ public class Hooks {
 	
 	}
 	
-	@After
+/*	@After
 	public static void afterScenario() {
 		driver.close();
 		
-	}
+	} */
 
 }

@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-10-28T15:12:33.857Z",
+        "start_timestamp": "2020-11-05T08:58:23.967Z",
         "before": [
           {
             "result": {
-              "duration": 27150682400,
+              "duration": 24183368400,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 56045900,
+              "duration": 74986100,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2367069200,
+              "duration": 2830993200,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 7289426100,
+              "duration": 9912947900,
               "status": "passed"
             },
             "line": 6,
@@ -59,47 +59,35 @@
           },
           {
             "result": {
-              "duration": 3102271700,
+              "duration": 3989318600,
               "status": "passed"
             },
             "line": 7,
-            "name": "select snaps and click on get packages button",
+            "name": "select create subscription",
             "match": {
-              "location": "Createsubscriber.select_snaps_and_click_on_get_Packages_button()"
+              "location": "Createsubscriber.select_create_subscription()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 710262700,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "select packages and click next",
-            "match": {
-              "location": "Createsubscriber.select_packages_and_click_next()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4310307400,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "verify subscription tab and enter subscription details then click next button",
-            "match": {
-              "location": "Createsubscriber.verify_subscription_tab_and_enter_subscription_details_then_click_next_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d86.0.4240.111)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-LA2C2MS\u0027, ip: \u0027192.168.1.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\sprit\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61438}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: e7b450aa7b133a09419055857b041b37\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\r\n\tat stepdef.Createsubscriber.verify_subscriber_user_screen_launched_and_enter_subscriber_details_then_click_the_add_user_button(Createsubscriber.java:129)\r\n\tat ✽.verify subscriber user screen launched and enter subscriber details then click the add user button(file:src/test/resources/createsubscriber.feature:12)\r\n",
-              "duration": 32679767200,
+              "error_message": "org.openqa.selenium.JavascriptException: javascript error: arguments[0].click is not a function\n  (Session info: chrome\u003d86.0.4240.111)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-LA2C2MS\u0027, ip: \u0027172.16.25.142\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\sprit\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53748}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 414bc10d21e23d181c945ff86e5d94e2\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)\r\n\tat stepdef.Createsubscriber.enter_snaps_packages_subscription_and_contracts(Createsubscriber.java:92)\r\n\tat ✽.Enter snaps packages subscription and contracts(file:src/test/resources/createsubscriber.feature:8)\r\n",
+              "duration": 6006703100,
               "status": "failed"
             },
-            "line": 12,
+            "line": 8,
+            "name": "Enter snaps packages subscription and contracts",
+            "match": {
+              "location": "Createsubscriber.enter_snaps_packages_subscription_and_contracts()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33600,
+              "status": "skipped"
+            },
+            "line": 11,
             "name": "verify subscriber user screen launched and enter subscriber details then click the add user button",
             "match": {
               "location": "Createsubscriber.verify_subscriber_user_screen_launched_and_enter_subscriber_details_then_click_the_add_user_button()"
@@ -108,25 +96,13 @@
           },
           {
             "result": {
-              "duration": 31300,
-              "status": "skipped"
-            },
-            "line": 13,
-            "name": "verify Finalize tab and browse file by clicking browse for file",
-            "match": {
-              "location": "Createsubscriber.verify_Finalize_tab_and_browse_file_by_clicking_browse_for_file()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 14600,
+              "duration": 18100,
               "status": "skipped"
             },
             "line": 14,
-            "name": "select customer paid button and click the finalize button",
+            "name": "verify all updated and click on next button to finish",
             "match": {
-              "location": "Createsubscriber.select_customer_paid_button_and_click_the_finalize_button()"
+              "location": "Createsubscriber.verify_all_updated_and_click_on_next_button_to_finish()"
             },
             "keyword": "Then "
           }

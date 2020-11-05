@@ -7,16 +7,17 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import stepdef.JVMReport;
 
-@RunWith(Cucumber.class)
+@RunWith(Cucumber.class)  	
 @CucumberOptions(features="src/test/resources/createsubscriber.feature", glue= {"stepdef"},
-plugin= {"pretty","json: target/Repo/Createsubscriber.json"}, dryRun=false, monochrome=true)
-
+plugin= {"pretty","json: target/Repo/report.json"}, dryRun=false, monochrome=true)
+	
 
 public class Testrunner {
 	
 	@AfterClass
 	public static void ReportGeneration() {
-		JVMReport.GenerateJVMReport("C:\\Users\\sprit\\git\\Adminportal\\ target\\Repo\\Createsubscriber.json");
+		JVMReport.GenerateJVMReport("C:\\Users\\sprit\\Adminportal Git download\\Adminportalscripts\\ target\\Repo\\report.json");
+
 	} 
 
 }

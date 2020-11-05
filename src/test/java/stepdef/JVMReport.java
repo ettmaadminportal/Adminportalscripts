@@ -12,7 +12,7 @@ import net.masterthought.cucumber.ReportBuilder;
 public class JVMReport {
 	
 	public static void GenerateJVMReport (String j) {
-		File f = new File("C:\\Users\\sprit\\eclipse-workspace\\JVMReport");
+		File f = new File("C:\\Users\\sprit\\Adminportal Git download\\Adminportalscripts\\ target\\Repo");
 		Configuration c = new Configuration(f, "JVM Test");
 		c.addClassifications("Browser Name", "Google Chrome");
 		c.addClassifications("Browser Version", "86.0");
