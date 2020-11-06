@@ -1,5 +1,7 @@
 package stepdef;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,8 +24,10 @@ public class Hooks {
 		driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
+		Thread.sleep(3000);
 		driver.get("https://qa-adminportal.ettma.com/#/dashboard");
 		Thread.sleep(5000);
+		driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
 		
 		LoginPage login = new LoginPage(driver);
 		
@@ -46,10 +50,10 @@ public class Hooks {
 	
 	}
 	
-/*	@After
+	@After
 	public static void afterScenario() {
 		driver.close();
 		
-	} */
+	} 
 
 }

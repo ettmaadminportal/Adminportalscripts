@@ -20,16 +20,19 @@ public class Createsubscriber {
 	
 public static WebDriver driver;	
 	
-	public  Createsubscriber() {
+	public  Createsubscriber() throws InterruptedException {
 		driver = Hooks.driver;
+		Thread.sleep(2000);
 	}
 	
 	@Given("select subscriber and click on the create new subscriber")
 	public void select_subscriber_and_click_on_the_create_new_subscriber() throws InterruptedException {
 		Createsub createsub = new Createsub(driver);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
 		createsub.getSub_btn().click();
 		Thread.sleep(2000);
+		driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
 		createsub.getCreate_btn().click();
 	}
 
