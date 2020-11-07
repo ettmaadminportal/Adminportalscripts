@@ -1,13 +1,13 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-06T09:04:12.704Z",
+        "start_timestamp": "2020-11-07T15:11:48.058Z",
         "before": [
           {
             "result": {
-              "duration": 28379857100,
+              "duration": 28099254800,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "create new subscriber",
+        "line": 5,
+        "name": "Edit subscriber from admin portal",
         "description": "",
-        "id": "create-new-subscriber-in-admin-portal;create-new-subscriber",
+        "id": "edit-subscriber-from-admin-portal;edit-subscriber-from-admin-portal",
         "after": [
           {
             "result": {
-              "duration": 43960300,
+              "duration": 24900,
               "status": "passed"
             },
             "match": {
@@ -35,207 +35,113 @@
         "steps": [
           {
             "result": {
-              "duration": 4971128400,
+              "duration": 4060966200,
               "status": "passed"
             },
-            "line": 5,
-            "name": "select subscriber and click on the create new subscriber",
+            "line": 6,
+            "name": "select subscriber tab from admin portal",
             "match": {
-              "location": "Createsubscriber.select_subscriber_and_click_on_the_create_new_subscriber()"
+              "location": "Editsubscriber.select_subscriber_tab_from_admin_portal()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 9798160000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Enter the subscriber details and click next",
-            "match": {
-              "location": "Createsubscriber.enter_the_subscriber_details_and_click_next()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4049865200,
+              "duration": 4246670400,
               "status": "passed"
             },
             "line": 7,
-            "name": "select create subscription",
+            "name": "Filter the subscriber and select view/edit subscriber",
             "match": {
-              "location": "Createsubscriber.select_create_subscription()"
+              "location": "Editsubscriber.filter_the_subscriber_and_select_view_edit_subscriber()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 10503208100,
+              "duration": 2268338000,
               "status": "passed"
             },
             "line": 8,
-            "name": "Enter snaps packages subscription and contracts",
+            "name": "Do changes in subscribers details and click on next",
             "match": {
-              "location": "Createsubscriber.enter_snaps_packages_subscription_and_contracts()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3270392600,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "verify subscriber user screen launched and enter subscriber details then click the add user button",
-            "match": {
-              "location": "Createsubscriber.verify_subscriber_user_screen_launched_and_enter_subscriber_details_then_click_the_add_user_button()"
+              "location": "Editsubscriber.do_changes_in_subscribers_details_and_click_on_next()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 54186000,
+              "duration": 3100158700,
               "status": "passed"
             },
-            "line": 14,
-            "name": "verify all updated and click on next button to finish",
+            "line": 9,
+            "name": "User can select create subscription",
             "match": {
-              "location": "Createsubscriber.verify_all_updated_and_click_on_next_button_to_finish()"
+              "location": "Editsubscriber.user_can_select_create_subscription()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10443471100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User Enter snaps packages subscription and contracts",
+            "match": {
+              "location": "Editsubscriber.user_Enter_snaps_packages_subscription_and_contracts()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3264265200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User can verify user screen launched and enter new user details if need to user",
+            "match": {
+              "location": "Editsubscriber.user_can_verify_user_screen_launched_and_enter_new_user_details_if_need_to_user()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73846900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click finish to complete edit subscriber",
+            "match": {
+              "location": "Editsubscriber.click_finish_to_complete_edit_subscriber()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
+            "name": "@tag"
+          },
+          {
             "name": "@tag1"
           }
         ]
       }
     ],
-    "name": "Create new subscriber in admin portal",
+    "name": "Edit subscriber from admin portal",
     "description": "",
-    "id": "create-new-subscriber-in-admin-portal",
+    "id": "edit-subscriber-from-admin-portal",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/createsubscriber.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
+    "uri": "file:src/test/resources/Editsubscriber.feature",
+    "tags": [
       {
-        "start_timestamp": "2020-11-06T09:05:13.788Z",
-        "before": [
-          {
-            "result": {
-              "duration": 25889824100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.beforeScenario()"
-            }
-          }
-        ],
-        "line": 3,
-        "name": "login with valid data",
-        "description": "",
-        "id": "login-page;login-with-valid-data",
-        "after": [
-          {
-            "result": {
-              "duration": 84120700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.afterScenario()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 13283774800,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "Launch the browser",
-            "match": {
-              "location": "Login_Execution.launch_the_browser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 60755900,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Enter credentials to login",
-            "match": {
-              "location": "Login_Execution.enter_credentials_to_login(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "jayakumarraju@ettma.com"
-                ]
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 48417100,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Click Next button",
-            "match": {
-              "location": "Login_Execution.click_Next_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 52159100,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Enter the password",
-            "match": {
-              "location": "Login_Execution.enter_the_password(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "Kumar@1989"
-                ]
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 9148093700,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "click on the signin button",
-            "match": {
-              "location": "Login_Execution.click_on_the_signin_button()"
-            },
-            "keyword": "And "
-          }
-        ]
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
       }
-    ],
-    "name": "Login page",
-    "description": "",
-    "id": "login-page",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/login.feature",
-    "tags": []
+    ]
   }
 ]

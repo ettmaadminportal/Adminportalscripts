@@ -52,7 +52,7 @@ public class Hooks {
 	
 	@After
 	public static void afterScenario() {
-		driver.close();
+	//	driver.close();
 		
 	} 
 
