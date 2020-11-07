@@ -4,7 +4,7 @@
   <artifactId>ettma</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 	
-  <!-- To create a new branch -->
+
 	
   <build>
     <!-- To define the plugin version in your parent POM -->
