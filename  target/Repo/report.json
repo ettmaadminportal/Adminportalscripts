@@ -1,13 +1,13 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-05T13:48:26.871Z",
+        "start_timestamp": "2020-11-07T15:11:48.058Z",
         "before": [
           {
             "result": {
-              "duration": 23429082400,
+              "duration": 28099254800,
               "status": "passed"
             },
             "match": {
@@ -15,172 +15,133 @@
             }
           }
         ],
-        "line": 4,
-        "name": "create new subscriber",
+        "line": 5,
+        "name": "Edit subscriber from admin portal",
         "description": "",
-        "id": "create-new-subscriber-in-admin-portal;create-new-subscriber",
+        "id": "edit-subscriber-from-admin-portal;edit-subscriber-from-admin-portal",
+        "after": [
+          {
+            "result": {
+              "duration": 24900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3118816600,
+              "duration": 4060966200,
               "status": "passed"
             },
-            "line": 5,
-            "name": "select subscriber and click on the create new subscriber",
+            "line": 6,
+            "name": "select subscriber tab from admin portal",
             "match": {
-              "location": "Createsubscriber.select_subscriber_and_click_on_the_create_new_subscriber()"
+              "location": "Editsubscriber.select_subscriber_tab_from_admin_portal()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 9883470499,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Enter the subscriber details and click next",
-            "match": {
-              "location": "Createsubscriber.enter_the_subscriber_details_and_click_next()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4006879799,
+              "duration": 4246670400,
               "status": "passed"
             },
             "line": 7,
-            "name": "select create subscription",
+            "name": "Filter the subscriber and select view/edit subscriber",
             "match": {
-              "location": "Createsubscriber.select_create_subscription()"
+              "location": "Editsubscriber.filter_the_subscriber_and_select_view_edit_subscriber()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 10368508701,
+              "duration": 2268338000,
               "status": "passed"
             },
             "line": 8,
-            "name": "Enter snaps packages subscription and contracts",
+            "name": "Do changes in subscribers details and click on next",
             "match": {
-              "location": "Createsubscriber.enter_snaps_packages_subscription_and_contracts()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3186355801,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "verify subscriber user screen launched and enter subscriber details then click the add user button",
-            "match": {
-              "location": "Createsubscriber.verify_subscriber_user_screen_launched_and_enter_subscriber_details_then_click_the_add_user_button()"
+              "location": "Editsubscriber.do_changes_in_subscribers_details_and_click_on_next()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 76413799,
+              "duration": 3100158700,
               "status": "passed"
             },
-            "line": 14,
-            "name": "verify all updated and click on next button to finish",
+            "line": 9,
+            "name": "User can select create subscription",
             "match": {
-              "location": "Createsubscriber.verify_all_updated_and_click_on_next_button_to_finish()"
+              "location": "Editsubscriber.user_can_select_create_subscription()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10443471100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User Enter snaps packages subscription and contracts",
+            "match": {
+              "location": "Editsubscriber.user_Enter_snaps_packages_subscription_and_contracts()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3264265200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User can verify user screen launched and enter new user details if need to user",
+            "match": {
+              "location": "Editsubscriber.user_can_verify_user_screen_launched_and_enter_new_user_details_if_need_to_user()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73846900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click finish to complete edit subscriber",
+            "match": {
+              "location": "Editsubscriber.click_finish_to_complete_edit_subscriber()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@tag1"
-          }
-        ]
-      }
-    ],
-    "name": "Create new subscriber in admin portal",
-    "description": "",
-    "id": "create-new-subscriber-in-admin-portal",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/createsubscriber.feature",
-    "tags": []
-  }
-]ebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.sendKeys(Unknown Source)\r\n\tat stepdef.Createsubscriber.enter_the_subscriber_details_and_click_next(Createsubscriber.java:54)\r\n\tat ✽.Enter the subscriber details and click next(file:src/test/resources/createsubscriber.feature:6)\r\n",
-              "duration": 18664195100,
-              "status": "failed"
-            },
-            "line": 6,
-            "name": "Enter the subscriber details and click next",
-            "match": {
-              "location": "Createsubscriber.enter_the_subscriber_details_and_click_next()"
-            },
-            "keyword": "When "
+            "name": "@tag"
           },
-          {
-            "result": {
-              "duration": 23501,
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "select create subscription",
-            "match": {
-              "location": "Createsubscriber.select_create_subscription()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 11101,
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "Enter snaps packages subscription and contracts",
-            "match": {
-              "location": "Createsubscriber.enter_snaps_packages_subscription_and_contracts()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 8300,
-              "status": "skipped"
-            },
-            "line": 11,
-            "name": "verify subscriber user screen launched and enter subscriber details then click the add user button",
-            "match": {
-              "location": "Createsubscriber.verify_subscriber_user_screen_launched_and_enter_subscriber_details_then_click_the_add_user_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 7500,
-              "status": "skipped"
-            },
-            "line": 14,
-            "name": "verify all updated and click on next button to finish",
-            "match": {
-              "location": "Createsubscriber.verify_all_updated_and_click_on_next_button_to_finish()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
           {
             "name": "@tag1"
           }
         ]
       }
     ],
-    "name": "Create new subscriber in admin portal",
+    "name": "Edit subscriber from admin portal",
     "description": "",
-    "id": "create-new-subscriber-in-admin-portal",
+    "id": "edit-subscriber-from-admin-portal",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/createsubscriber.feature",
-    "tags": []
+    "uri": "file:src/test/resources/Editsubscriber.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
