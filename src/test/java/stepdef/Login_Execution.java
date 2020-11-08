@@ -59,7 +59,7 @@ public class Login_Execution  {
 		} else {
 			System.out.println("There is no stay in page");
 		}
-	}
-
+		driver.close();
+	}	
 
 }

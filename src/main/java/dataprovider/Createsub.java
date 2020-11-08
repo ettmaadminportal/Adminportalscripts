@@ -11,7 +11,7 @@ public class Createsub {
 	private static WebDriver driver;
 
 	public Createsub(WebDriver driver) {
-		Createsub.driver = driver;
+		Createsub.setDriver(driver);
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -236,6 +236,10 @@ public class Createsub {
 
 	public WebElement getNxt_btn2() {
 		return nxt_btn2;
+	}
+
+	public static void setDriver(WebDriver driver) {
+		Createsub.driver = driver;
 	}
 
 	 
