@@ -3,7 +3,9 @@
   <groupId>adminportal</groupId>
   <artifactId>ettma</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+	
+
+	
   <build>
     <!-- To define the plugin version in your parent POM -->
     <pluginManagement>
