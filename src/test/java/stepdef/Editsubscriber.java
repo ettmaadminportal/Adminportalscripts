@@ -139,8 +139,7 @@ public static WebDriver driver;
 		createsub.getUser_lastname().sendKeys("test");
 		createsub.getUser_phone().sendKeys("8145552907");
 		createsub.getUser_save().click();
-		Thread.sleep(2000);
-		
+		Thread.sleep(2000);		
 		
 	}
 
