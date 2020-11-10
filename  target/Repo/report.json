@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-07T15:11:48.058Z",
+        "start_timestamp": "2020-11-09T13:45:06.001Z",
         "before": [
           {
             "result": {
-              "duration": 28099254800,
+              "duration": 27204779500,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 5,
-        "name": "Edit subscriber from admin portal",
+        "line": 6,
+        "name": "Search subscribers based on the search filters",
         "description": "",
-        "id": "edit-subscriber-from-admin-portal;edit-subscriber-from-admin-portal",
+        "id": "search-subscribers-based-on-the-search-filters;search-subscribers-based-on-the-search-filters",
         "after": [
           {
             "result": {
-              "duration": 24900,
+              "duration": 192400,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4060966200,
+              "duration": 4058202000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "select subscriber tab from admin portal",
             "match": {
               "location": "Editsubscriber.select_subscriber_tab_from_admin_portal()"
@@ -47,101 +47,65 @@
           },
           {
             "result": {
-              "duration": 4246670400,
+              "duration": 2066542700,
               "status": "passed"
             },
-            "line": 7,
-            "name": "Filter the subscriber and select view/edit subscriber",
+            "line": 8,
+            "name": "select search filter",
             "match": {
-              "location": "Editsubscriber.filter_the_subscriber_and_select_view_edit_subscriber()"
+              "location": "Subsearchfilters.select_search_filter()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2268338000,
+              "duration": 4607434100,
               "status": "passed"
             },
-            "line": 8,
-            "name": "Do changes in subscribers details and click on next",
+            "line": 9,
+            "name": "Search by subscriber id",
             "match": {
-              "location": "Editsubscriber.do_changes_in_subscribers_details_and_click_on_next()"
+              "location": "Subsearchfilters.search_by_subscriber_id()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3100158700,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User can select create subscription",
-            "match": {
-              "location": "Editsubscriber.user_can_select_create_subscription()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 10443471100,
+              "duration": 6499177000,
               "status": "passed"
             },
             "line": 10,
-            "name": "User Enter snaps packages subscription and contracts",
+            "name": "search by subscriber name",
             "match": {
-              "location": "Editsubscriber.user_Enter_snaps_packages_subscription_and_contracts()"
+              "location": "Subsearchfilters.search_by_subscriber_name()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3264265200,
+              "duration": 6353956300,
               "status": "passed"
             },
             "line": 11,
-            "name": "User can verify user screen launched and enter new user details if need to user",
+            "name": "search by subscriber start date and end date",
             "match": {
-              "location": "Editsubscriber.user_can_verify_user_screen_launched_and_enter_new_user_details_if_need_to_user()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 73846900,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "click finish to complete edit subscriber",
-            "match": {
-              "location": "Editsubscriber.click_finish_to_complete_edit_subscriber()"
+              "location": "Subsearchfilters.search_by_subscriber_start_date_and_end_date()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@tag"
-          },
-          {
             "name": "@tag1"
           }
         ]
       }
     ],
-    "name": "Edit subscriber from admin portal",
+    "name": "Search subscribers based on the search filters",
     "description": "",
-    "id": "edit-subscriber-from-admin-portal",
+    "id": "search-subscribers-based-on-the-search-filters",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Editsubscriber.feature",
-    "tags": [
-      {
-        "name": "@tag",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/Subsearchfilters.feature",
+    "tags": []
   }
 ]
