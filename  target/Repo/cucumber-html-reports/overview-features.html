@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                5,
                 0,
                 0,
+                3,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,8 +106,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                1,
-                0
+                0,
+                1
             ],
             backgroundColor: [
                 "#00B000",
@@ -153,8 +153,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   1,
-                   0
+                   0,
+                   1
                ],
                backgroundColor: [
                 "#00B000",
@@ -228,35 +228,13 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>JVM Test</td>
-            <td>09 Nov 2020, 19:15</td>
+            <td>16 Nov 2020, 20:56</td>
     </tr>
   </tbody>
 </table>
 
   </div>
   <div class="col-md-3 col-md-offset-2">
-          
-<table class="table table-bordered" id="classifications">
-  <tbody>
-          <tr class="info">
-        <th>Browser Name</th>
-        <td>Google Chrome</td>
-      </tr>
-          <tr class="info">
-        <th>Browser Version</th>
-        <td>86.0</td>
-      </tr>
-          <tr class="info">
-        <th>OS</th>
-        <td>Windows 10</td>
-      </tr>
-          <tr class="info">
-        <th>Sprint</th>
-        <td>1</td>
-      </tr>
-      </tbody>
-</table>
-
       </div>
 </div>
 
@@ -345,54 +323,54 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="report-feature_3741774936.html">Search subscribers based on the search filters</a></td>
+        <td class="tagname"><a href="report-feature_3994675795.html">Download Excel and pdf from subscriber tab</a></td>
 
-        <td      class="passed"    >5</td>
         <td >0</td>
         <td >0</td>
+        <td     class="skipped"   >3</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">5</td>
+        <td class="total">3</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="23585312100">23.585</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="1097100">0.001</td>
+        <td class="failed">Failed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>5</td>
       <td>0</td>
       <td>0</td>
+      <td>3</td>
       <td>0</td>
       <td>0</td>
-      <td>5</td>
+      <td>3</td>
 
-      <td>1</td>
       <td>0</td>
       <td>1</td>
+      <td>1</td>
 
-      <td class="duration">23.585</td>
+      <td class="duration">0.001</td>
       <td>1</td>
     </tr>
     <tr>
       <td></td>
-            <td>100.00%</td>
+            <td>0.00%</td>
       <td>0.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td></td>
       <td>100.00%</td>
       <td>0.00%</td>
+      <td>0.00%</td>
       <td></td>
-      <td></td>
+      <td>0.00%</td>
       <td>100.00%</td>
+      <td></td>
+      <td></td>
+      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>
