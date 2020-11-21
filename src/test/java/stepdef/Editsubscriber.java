@@ -20,6 +20,7 @@ public class Editsubscriber {
 	
 public static Createsub createsub;	
 public static WebDriver driver;	
+public static Robot r;
 	
 	public  Editsubscriber() throws InterruptedException {
 		driver = Hooks.driver;
@@ -41,7 +42,7 @@ public static WebDriver driver;
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		editsub.getFilter_box().sendKeys("morgan");
 		Thread.sleep(1000);
-		Robot r = new Robot();
+		r = new Robot();
 		r.keyPress(KeyEvent.VK_ENTER);
 		r.keyRelease(KeyEvent.VK_ENTER);
 		editsub.getAction_btn().click();
@@ -72,8 +73,8 @@ public static WebDriver driver;
 	}
 
 	@When("User can select create subscription")
-	public void user_can_select_create_subscription() throws InterruptedException {
-		Createsub createsub = new Createsub(driver);
+	public static void user_can_select_create_subscription() throws InterruptedException {
+//		Createsub createsub = new Createsub(driver);
 		createsub.getCreate_subscription().click();
 		Thread.sleep(3000);	
 		
@@ -81,9 +82,11 @@ public static WebDriver driver;
 	}
 
 	@When("User Enter snaps packages subscription and contracts")
-	public void user_Enter_snaps_packages_subscription_and_contracts() throws InterruptedException, IOException {
-		Createsub createsub = new Createsub(driver);
+	public static void user_Enter_snaps_packages_subscription_and_contracts() throws InterruptedException, IOException, AWTException {
+//		Createsub createsub = new Createsub(driver);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
+		Thread.sleep(2000);
 		createsub.getSnap_checkbox().click();
 		Thread.sleep(2000);
 		WebElement Savesnaps_getpack = driver.findElement(By.xpath("//*[@id=\"mat-tab-content-0-0\"]/div/div/div[2]/div/button"));
@@ -98,9 +101,14 @@ public static WebDriver driver;
 		js2.executeScript("arguments[0].click()", Save_next);
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//mat-tab-body/div[1]/div[1]/div[1]/mat-form-field[2]/div[1]/div[1]/div[2]/mat-datepicker-toggle[1]/button[1]/span[1]/*[1]")).click();
-		driver.findElement(By.xpath("(//div[@class='mat-calendar-body-cell-content'])[9]")).click();
+		Robot r = new Robot();
+		r.keyPress(KeyEvent.VK_ENTER);
+		r.keyRelease(KeyEvent.VK_ENTER);
+	//	driver.findElement(By.xpath("(//div[@class='mat-calendar-body-cell-content'])[9]")).click();
 		driver.findElement(By.xpath("//mat-tab-body/div[1]/div[1]/div[1]/mat-form-field[3]/div[1]/div[1]/div[2]/mat-datepicker-toggle[1]/button[1]/span[1]/*[1]")).click();
-		driver.findElement(By.xpath("(//div[@class='mat-calendar-body-cell-content'])[29]")).click();
+		r.keyPress(KeyEvent.VK_ENTER);
+		r.keyRelease(KeyEvent.VK_ENTER);
+	//	driver.findElement(By.xpath("(//div[@class='mat-calendar-body-cell-content'])[29]")).click();
 		createsub.getSavesubscription_next().click();
 		JavascriptExecutor js1 = (JavascriptExecutor)driver;
 		WebElement Browsebtn = driver.findElement(By.xpath("//*[@id=\"mat-tab-content-0-3\"]/div/div[1]/app-dndfileupload/div/label"));
@@ -127,8 +135,8 @@ public static WebDriver driver;
 	}
 
 	@When("User can verify user screen launched and enter new user details if need to user")
-	public void user_can_verify_user_screen_launched_and_enter_new_user_details_if_need_to_user() throws InterruptedException {
-		Createsub createsub = new Createsub(driver);
+	public static void user_can_verify_user_screen_launched_and_enter_new_user_details_if_need_to_user() throws InterruptedException {
+//		Createsub createsub = new Createsub(driver);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
@@ -145,8 +153,8 @@ public static WebDriver driver;
 	}
 
 	@Then("click finish to complete edit subscriber")
-	public void click_finish_to_complete_edit_subscriber() {
-		Createsub createsub = new Createsub(driver);
+	public static void click_finish_to_complete_edit_subscriber() {
+//		Createsub createsub = new Createsub(driver);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		createsub.getFinalize_btn().click();		
 		
