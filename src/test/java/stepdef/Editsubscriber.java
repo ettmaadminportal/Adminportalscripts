@@ -18,16 +18,17 @@ import io.cucumber.java.en.When;
 
 public class Editsubscriber {
 	
+public static Createsub createsub;	
 public static WebDriver driver;	
 	
 	public  Editsubscriber() throws InterruptedException {
 		driver = Hooks.driver;
 		Thread.sleep(2000);
-	}
+	}	
 	
 	@Given("select subscriber tab from admin portal")
-	public void select_subscriber_tab_from_admin_portal() throws InterruptedException {
-		Createsub createsub = new Createsub(driver);
+	public static void select_subscriber_tab_from_admin_portal() throws InterruptedException {
+		createsub = new Createsub(driver);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
 		createsub.getSub_btn().click();
@@ -56,8 +57,8 @@ public static WebDriver driver;
 	}
 
 	@When("Do changes in subscribers details and click on next")
-	public void do_changes_in_subscribers_details_and_click_on_next() throws InterruptedException {
-		Createsub createsub = new Createsub(driver);
+	public static void do_changes_in_subscribers_details_and_click_on_next() throws InterruptedException {
+//		Createsub createsub = new Createsub(driver);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		createsub.getFirst_name().clear();
 		createsub.getFirst_name().sendKeys("Auto");
