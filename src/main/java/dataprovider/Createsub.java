@@ -64,7 +64,7 @@ public class Createsub {
 	@FindBy(how = How.XPATH, using ="//input[@id='mat-input-30']")
 	protected WebElement snap_search;
 	
-	@FindBy(how = How.XPATH, using ="(//mat-pseudo-checkbox[@class='mat-pseudo-checkbox ng-star-inserted'])[1]")
+	@FindBy(how = How.XPATH, using ="(//div[@class='mat-checkbox-inner-container'])[1]")
 	protected WebElement snap_checkbox;
 	
 	@FindBy(how = How.XPATH, using ="//*[@id=\"mat-tab-content-1-0\"]/div/div/div[2]/div/button/span")
