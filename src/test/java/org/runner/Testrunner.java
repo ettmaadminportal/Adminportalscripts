@@ -8,8 +8,8 @@ import io.cucumber.junit.CucumberOptions;
 import stepdef.JVMReport;
 
 @RunWith(Cucumber.class)  	
-@CucumberOptions(features="src/test/resources/Viewaudit.feature", glue= {"stepdef"},
-plugin= {"pretty","json: target/Repo/report.json"}, dryRun=true, monochrome=true)
+@CucumberOptions(features="src/test/resources/", glue= {"stepdef"},
+plugin= {"pretty","json: target/Repo/report.json"}, dryRun=false, monochrome=true)
 	
 
 public class Testrunner {

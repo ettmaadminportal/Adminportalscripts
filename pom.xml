@@ -56,7 +56,7 @@
         <includes>
         <exclude>**/*runner.java</exclude>
         </includes>
-        <threadCount>1</threadCount>
+        <threadCount>2</threadCount>
     </configuration>
 </plugin>
     </plugins>

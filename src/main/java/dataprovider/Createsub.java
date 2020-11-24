@@ -12,8 +12,8 @@ public class Createsub {
 
 	public Createsub(WebDriver driver) {
 		Createsub.setDriver(driver);
-		PageFactory.initElements(driver, this);
-	}
+		PageFactory.initElements(driver, this);	
+	}	
 	
 	public static WebDriver getDriver() {
 		return driver;

@@ -3,27 +3,27 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-21T10:11:27.693Z",
+        "start_timestamp": "2020-11-24T14:36:16.157Z",
         "before": [
           {
             "result": {
-              "duration": 443800,
-              "status": "skipped"
+              "duration": 30698603400,
+              "status": "passed"
             },
             "match": {
               "location": "Hooks.beforeScenario()"
             }
           }
         ],
-        "line": 5,
-        "name": "Validate view audit functionality",
+        "line": 4,
+        "name": "Validate disable subscription for subscribers subscription",
         "description": "",
-        "id": "validate-view-audit-functionality;validate-view-audit-functionality",
+        "id": "validate-disable-subscription-for-subscribers-subscription;validate-disable-subscription-for-subscribers-subscription",
         "after": [
           {
             "result": {
-              "duration": 14500,
-              "status": "skipped"
+              "duration": 74900,
+              "status": "passed"
             },
             "match": {
               "location": "Hooks.afterScenario()"
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 231200,
-              "status": "skipped"
+              "duration": 4066520100,
+              "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "select subscriber tab from admin portal",
             "match": {
               "location": "Editsubscriber.select_subscriber_tab_from_admin_portal()"
@@ -47,35 +47,48 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 6582438900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Select subscriber view edit and navigate to subscriptions tab",
+            "match": {
+              "location": "Subenablesubscription.select_subscriber_view_edit_and_navigate_to_subscriptions_tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4134301200,
+              "status": "passed"
             },
             "line": 7,
-            "name": "Filter the subscriber and select view audit from actions",
-            "match": {},
+            "name": "Select package and select enable/disable subscription option",
+            "match": {
+              "location": "Subenablesubscription.select_package_and_select_enable_disable_subscription_option()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 6266122200,
+              "status": "passed"
             },
             "line": 8,
-            "name": "Verify the audit log from audit trail",
-            "match": {},
+            "name": "Verify disable button check box is selected and comments added",
+            "match": {
+              "location": "Subdisablesubscription.verify_disable_button_check_box_is_selected_and_comments_added()"
+            },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@tag1"
           }
         ]
       }
     ],
-    "name": "Validate view audit functionality",
+    "name": "Validate disable subscription for subscribers subscription",
     "description": "",
-    "id": "validate-view-audit-functionality",
+    "id": "validate-disable-subscription-for-subscribers-subscription",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Viewaudit.feature",
+    "uri": "file:src/test/resources/Subdisablesubscription.feature",
     "tags": []
   }
 ]
