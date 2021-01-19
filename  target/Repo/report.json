@@ -1,13 +1,13 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-24T14:36:16.157Z",
+        "start_timestamp": "2020-11-26T09:37:04.918Z",
         "before": [
           {
             "result": {
-              "duration": 30698603400,
+              "duration": 27939361000,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 4,
-        "name": "Validate disable subscription for subscribers subscription",
+        "name": "create new subscriber",
         "description": "",
-        "id": "validate-disable-subscription-for-subscribers-subscription;validate-disable-subscription-for-subscribers-subscription",
+        "id": "create-new-subscriber-in-admin-portal;create-new-subscriber",
         "after": [
           {
             "result": {
-              "duration": 74900,
+              "duration": 32000,
               "status": "passed"
             },
             "match": {
@@ -35,60 +35,90 @@
         "steps": [
           {
             "result": {
-              "duration": 4066520100,
+              "duration": 4458528400,
               "status": "passed"
             },
             "line": 5,
-            "name": "select subscriber tab from admin portal",
+            "name": "select subscriber and click on the create new subscriber",
             "match": {
-              "location": "Editsubscriber.select_subscriber_tab_from_admin_portal()"
+              "location": "Createsubscriber.select_subscriber_and_click_on_the_create_new_subscriber()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 6582438900,
+              "duration": 9851023400,
               "status": "passed"
             },
             "line": 6,
-            "name": "Select subscriber view edit and navigate to subscriptions tab",
+            "name": "Enter the subscriber details and click next",
             "match": {
-              "location": "Subenablesubscription.select_subscriber_view_edit_and_navigate_to_subscriptions_tab()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4134301200,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Select package and select enable/disable subscription option",
-            "match": {
-              "location": "Subenablesubscription.select_package_and_select_enable_disable_subscription_option()"
+              "location": "Createsubscriber.enter_the_subscriber_details_and_click_next()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 6266122200,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d87.0.4280.66)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-LA2C2MS\u0027, ip: \u0027172.16.25.136\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\sprit\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57346}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 342038b6ce827101276677967804d764\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\r\n\tat stepdef.Createsubscriber.select_create_subscription(Createsubscriber.java:66)\r\n\tat ✽.select create subscription(file:src/test/resources/Createsubscriber.feature:7)\r\n",
+              "duration": 30107164500,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "select create subscription",
+            "match": {
+              "location": "Createsubscriber.select_create_subscription()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38100,
+              "status": "skipped"
             },
             "line": 8,
-            "name": "Verify disable button check box is selected and comments added",
+            "name": "Enter snaps packages subscription and contracts",
             "match": {
-              "location": "Subdisablesubscription.verify_disable_button_check_box_is_selected_and_comments_added()"
+              "location": "Createsubscriber.enter_snaps_packages_subscription_and_contracts()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "verify subscriber user screen launched and enter subscriber details then click the add user button",
+            "match": {
+              "location": "Createsubscriber.verify_subscriber_user_screen_launched_and_enter_subscriber_details_then_click_the_add_user_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16300,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "verify all updated and click on next button to finish",
+            "match": {
+              "location": "Createsubscriber.verify_all_updated_and_click_on_next_button_to_finish()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag1"
           }
         ]
       }
     ],
-    "name": "Validate disable subscription for subscribers subscription",
+    "name": "Create new subscriber in admin portal",
     "description": "",
-    "id": "validate-disable-subscription-for-subscribers-subscription",
+    "id": "create-new-subscriber-in-admin-portal",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Subdisablesubscription.feature",
+    "uri": "file:src/test/resources/Createsubscriber.feature",
     "tags": []
   }
 ]

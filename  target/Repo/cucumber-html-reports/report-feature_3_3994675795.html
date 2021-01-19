@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber Reports  - Tag: @tag1</title>
+<title>Cucumber Reports  - Feature: Download Excel and pdf from subscriber tab</title>
 
 </head>
 <body>
@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>JVM Test</td>
-            <td>26 Nov 2020, 15:08</td>
+            <td>24 Nov 2020, 20:46</td>
     </tr>
   </tbody>
 </table>
@@ -87,7 +87,7 @@ $(document).ready(function() {
 
 <div id="report-lead" class="container-fluid">
   <div class="col-md-10 col-md-offset-1">
-    <h2>Tag Report</h2>
+    <h2>Feature Report</h2>
       </div>
 </div>
 
@@ -106,7 +106,7 @@ $(document).ready(function() {
     <th colspan="2">Features</th>
   </tr>
   <tr>
-    <th>Tag</th>
+    <th>Feature</th>
         <th class="passed">Passed</th>
     <th class="failed">Failed</th>
     <th class="skipped">Skipped</th>
@@ -126,19 +126,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">@tag1</td>
-          <td      class="passed"    >2</td>
+          <td class="tagname">Download Excel and pdf from subscriber tab</td>
+          <td      class="passed"    >1</td>
           <td      class="failed"    >1</td>
-          <td     class="skipped"   >3</td>
+          <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">6</td>
+          <td class="total">3</td>
 
           <td >0</td>
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="44416788700">44.416</td>
+          <td class="duration" data-value="5184998400">5.184</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -165,14 +165,24 @@ $(document).ready(function() {
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <div class="elements">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
 
-                  
+        
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Download Excel and pdf from subscriber tab</span>
+  
+
+  </div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+                      
 <div class="element">
-      <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_2921003689.html">Create new subscriber in admin portal</a>
-    </div>
   
   
 <div class="tags indention">
@@ -181,14 +191,14 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">44.416</span>
+  <span class="lead-duration duration">5.184</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">create new subscriber</span>
+  <span class="name">Download Excel and pdf from subscriber tab</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -219,7 +229,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">Hooks.beforeScenario()</span>
                         
-  <span class="lead-duration duration">27.939</span>
+  <span class="lead-duration duration">27.490</span>
 
           </div>
 
@@ -253,35 +263,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">select subscriber and click on the create new subscriber</span>
+  <span class="name">select subscriber button from admin list</span>
   
-  <span class="lead-duration duration">4.458</span>
-
-</div>
-
-        
-
-
-        
-
-
-        
-        
-
-        
-        
-  
-        
-
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">Enter the subscriber details and click next</span>
-  
-  <span class="lead-duration duration">9.851</span>
+  <span class="lead-duration duration">4.141</span>
 
 </div>
 
@@ -304,10 +288,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief failed">
-  <span class="keyword indention">And</span>
-  <span class="name">select create subscription</span>
+  <span class="keyword indention">When</span>
+  <span class="name">click on excel and pdf icon to download</span>
   
-  <span class="lead-duration duration">30.107</span>
+  <span class="lead-duration duration">1.043</span>
 
 </div>
 
@@ -319,16 +303,16 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>org.openqa.selenium.ElementNotInteractableException:</a>
+          <a>org.openqa.selenium.ElementClickInterceptedException:</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+        <pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;mat-button-toggle-button mat-focus-indicator&quot; id=&quot;mat-button-toggle-1-button&quot; tabindex=&quot;0&quot; aria-pressed=&quot;false&quot; name=&quot;fontStyle&quot;&gt;...&lt;/button&gt; is not clickable at point (460, 290). Other element would receive the click: &lt;div _ngcontent-uad-c204=&quot;&quot; id=&quot;spinner&quot; class=&quot;backdrop ng-star-inserted&quot; style=&quot;opacity: 0.5;&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-LA2C2MS', ip: '172.16.25.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+System info: host: 'DESKTOP-LA2C2MS', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\sprit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57346}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 342038b6ce827101276677967804d764
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\sprit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54717}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c9737c170d5b3aa9b3b3c51762e94eda
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -341,14 +325,8 @@ Session ID: 342038b6ce827101276677967804d764
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy18.click(Unknown Source)
-	at stepdef.Createsubscriber.select_create_subscription(Createsubscriber.java:66)
-	at &#10045;.select create subscription(file:src/test/resources/Createsubscriber.feature:7)
+	at stepdef.Subscriberexcelandpdf.click_on_excel_and_pdf_icon_to_download(Subscriberexcelandpdf.java:33)
+	at &#10045;.click on excel and pdf icon to download(file:src/test/resources/Subscriberexcelandpdf.feature:7)
 </pre>
       </div>
     </div>
@@ -368,60 +346,8 @@ Session ID: 342038b6ce827101276677967804d764
           <div class="step">
         
 <div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Enter snaps packages subscription and contracts</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-
-        
-
-
-        
-        
-
-        
-        
-  
-        
-
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">verify subscriber user screen launched and enter subscriber details then click the add user button</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-
-        
-
-
-        
-        
-
-        
-        
-  
-        
-
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">verify all updated and click on next button to finish</span>
+  <span class="name">select open to view the excel or pdf</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -485,7 +411,8 @@ Session ID: 342038b6ce827101276677967804d764
   </div>
 </div>
 
-        
+                  </div>
+
       </div>
     </div>
   </div>

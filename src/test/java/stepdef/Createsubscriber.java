@@ -32,7 +32,6 @@ public static WebDriver driver;
 		driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
 		createsub.getSub_btn().click();
 		Thread.sleep(2000);
-		driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
 		createsub.getCreate_btn().click();
 	}
 

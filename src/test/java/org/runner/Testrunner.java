@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 import stepdef.JVMReport;
 
 @RunWith(Cucumber.class)  	
-@CucumberOptions(features="src/test/resources/", glue= {"stepdef"},
+@CucumberOptions(features="src/test/resources/Createsubscriber.feature", glue= {"stepdef"},
 plugin= {"pretty","json: target/Repo/report.json"}, dryRun=false, monochrome=true)
 	
 
